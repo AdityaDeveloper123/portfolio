@@ -1,0 +1,178 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+
+<head> 
+	<meta charset="UTF-8"> 
+	<meta name="viewport"
+		content="width=device-width,initial-scale=1.0"> 
+	<title>feedback </title> 
+	<link rel="stylesheet" href= 
+"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"> 
+<link rel="shortcut icon" href="images/icons8-favorite-96.png" type="image/x-icon">
+	<link rel="stylesheet" href="index.css">
+    <style>
+        /*style.css */
+@import url( 
+'https://fonts.googleapis.com/css2?family=Poppins&display=swap'); 
+
+body { 
+	margin: 0; 
+	display: flex; 
+	align-items: center; 
+	justify-content: space-around; 
+	flex-direction: column; 
+	height: 100vh; 
+	background-color: #bde5d2; 
+	font-family: 'Poppins', sans-serif; 
+
+} 
+
+.textup { 
+	text-align: center; 
+	color: rgb(11, 118, 11); 
+	font-weight: 700; 
+} 
+
+i { 
+	margin-right: 3px; 
+} 
+
+.form-box { 
+	background-color: #fff; 
+	box-shadow: 0 0 10px rgba(22, 95, 32, 0.8); 
+	padding: 15px; 
+	border-radius: 8px; 
+	width: 350px; 
+    height: 400px;
+} 
+
+form { 
+	max-width: 300px; 
+	margin: 0 auto; 
+} 
+
+
+label { 
+	display: block; 
+	margin-bottom: 8px; 
+	font-size: 17px; 
+	color: rgb(124, 0, 128); 
+	font-weight: 800; 
+} 
+
+input{
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    font-size: large;
+	width: 100%;
+	padding: 8px; 
+	margin-bottom: 12px; 
+	box-sizing: border-box; 
+	border-radius: 10px; 
+
+} 
+textarea {
+    font-style: oblique;
+    font-weight: bold;
+    font-size: large;
+	width: 100%;
+	padding: 8px; 
+	margin-bottom: 12px; 
+	box-sizing: border-box; 
+	border-radius: 10px; 
+    height: 80px;
+
+} 
+
+
+button { 
+    
+	background-color: #ec1a1a; 
+	color: #fff; 
+	padding: 8px; 
+	border: none; 
+	border-radius: 25px; 
+	cursor: pointer; 
+	width: 99%; 
+	font-size: 20px; 
+	transition: .2s linear; 
+} 
+
+button:hover { 
+	background-color: #0a6808; 
+	border: none; 
+	transform: translateY(-10px); 
+} 
+
+h1 { 
+	color: green; 
+}
+h1{
+    font-size: xx-large;
+    width: 100%;
+    color: orangered;
+    text-align: center;
+    animation: glow 1s ease-in-out infinite alternate;
+  }
+  
+  @-webkit-keyframes glow{
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #e60073, 0 0 10px #e60073, 0 0 10px #1100ff, 0 0 10px #22ff00, 0 0 10px #00a7d5;
+    }
+}
+    </style> 
+</head> 
+
+<body> 
+
+	<h1> Welcome To Portfolio Feedback Form</b>  </h1> 
+	<div class="form-box"> 
+		<div class="textup"> 
+			<b style="color: rgb(1, 2, 2);">It's take Just 2 Minute !! </b>
+		       </div> 
+
+		<br>
+		
+		    <form action="insert.php" method="post"></form>
+
+			<label for="name"> 
+				<i class="fa fa-solid fa-user"></i> 
+				 Enter Your Full Name <i class="fa-solid fa-arrow-down"></i> 
+			    </label> 
+			    <input type="text" name="name" id="name"
+				 required> 
+				
+
+			<label for="number"> 
+				<i class="fa-solid fa-phone"></i> 
+				Enter Your Mobile No <i class="fa-solid fa-arrow-down"></i> 
+			</label> 
+			<input type="mobileno" id="mobilenor"
+				name="mobileno" required> 
+
+                <label for="feedback"> Write Your Feedback Here <i class="fa-solid fa-arrow-down"></i></label>
+                <textarea name="feedback" class="feedback" ></textarea>
+
+                <button  type="submit"  onclick="myFunction()"> 
+				Submit 
+			</button>
+            </div> 
+            <br>
+			
+		</form> 
+	</div> 
+	<br>
+
+<br><br>
+	<script>
+		
+		function myFunction() {
+		 alert(" Form Submitted Succesfully !"); 
+		}
+		</script>
+		<script src="https://kit.fontawesome.com/5c236e97eb.js" crossorigin="anonymous"></script>
+		
+	
+</body> 
+
+</html>
